@@ -74,7 +74,7 @@ header{
 }
 
 .rank-area{
-    padding: 3em;
+    padding: 2em;
 
     .container{
 
@@ -144,7 +144,7 @@ header{
 }
 
 .about{
-    padding: 3em;
+    padding: 2em;
 
     h3{
         color: #6E3CFF;;
@@ -172,10 +172,14 @@ header{
             }
         }
     }
+
+    .phoneContainer{
+        display: none;
+    }
 }
 
 .contact{
-    padding: 3em;
+    padding: 2em;
 
     .container{
 
@@ -319,12 +323,18 @@ header{
             .small-container{
 
                 display: grid;
-                grid-template-columns: repeat(40% 50%);
+                grid-template-columns: 50% 50%;
+                padding: 2em;
 
                 .lef-side{
                     display: block;
-                    width: 40%;
-    
+                    margin-left: 4em;
+                    margin-top: 3em;
+                    
+                    iframe{
+                        width: 100%;
+                        height: 20em;
+                    }
                     
                 }
             }
