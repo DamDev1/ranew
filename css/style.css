@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  padding: 1em;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .container .logo a {
+  color: #6E3CFF;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+header .container .logo p {
+  display: inline-block;
+  position: absolute;
+  top: 0.6em;
+  color: #6E3CFF;
+}
+
+header .container .toggle {
+  font-size: 1.5em;
+  margin-top: 0.2em;
+  color: black;
+}
+
+header .container .right-side {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: #6E3CFF;
+  padding: 1em;
+  height: 100vh;
+  display: none;
+}
+
+header .container .right-side .right-ul {
+  list-style: none;
+}
+
+header .container .right-side .right-ul li {
+  text-align: right;
+  padding: .5em;
+}
+
+header .container .right-side .right-ul li a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.rank-area {
+  padding: 3em;
+}
+
+.rank-area .container .left-side .text-area h1 {
+  font-size: 2.5em;
+  color: #6E3CFF;
+  font-weight: 500;
+}
+
+.rank-area .container .left-side .text-area h1 span {
+  font-weight: 900;
+}
+
+.rank-area .container .left-side .text-area h3 {
+  font-weight: 250;
+  font-size: 2em;
+}
+
+.rank-area .container .left-side .text-area h3 span {
+  display: block;
+  font-weight: 600;
+  color: #6E3CFF;
+}
+
+.rank-area .container .left-side .text-area p {
+  font-size: 1em;
+}
+
+.rank-area .container .left-side .button-area input {
+  padding: 0.6em 1em;
+  background: #6E3CFF;
+  border: 0;
+  color: white;
+}
+
+.rank-area .container .left-side .button-area p {
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+.rank-area .container .left-side .button-area p a {
+  text-decoration: none;
+}
+
+.rank-area .container .left-side .button-area p a .fa-play {
+  color: lawngreen;
+}
+
+.rank-area .container .rightside {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.rank-area .container .rightside img {
+  width: 60%;
+}
+
+.about {
+  padding: 3em;
+}
+
+.about h3 {
+  color: #6E3CFF;
+  font-size: 1em;
+}
+
+.about .container .abt-left-side h2 {
+  font-size: 2.3em;
+}
+
+.about .container .abt-right-side {
+  text-align: center;
+  margin-top: 2.5em;
+}
+
+.about .container .abt-right-side img {
+  width: 70%;
+}
+
+.contact {
+  padding: 3em;
+}
+
+.contact .container .lef-side {
+  display: none;
+}
+
+.contact .container .cont-text h3 {
+  color: #6E3CFF;
+}
+
+.contact .container .cont-text button {
+  padding: .5em 1em;
+  background: #6E3CFF;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+.contact .container .cont-form {
+  margin-top: 1.5em;
+}
+
+.contact .container .cont-form label {
+  display: block;
+  margin-top: 0.5em;
+}
+
+.contact .container .cont-form input {
+  width: 100%;
+  padding: 0.7em 0em;
+  margin-top: 0.5em;
+}
+
+.contact .container .cont-form textarea {
+  display: block;
+  width: 100%;
+}
+
+.contact .container .cont-form button {
+  background: #6E3CFF;
+  color: white;
+  padding: 0.5em 1em;
+  border: 0;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+@media (min-width: 680px) {
+  header .container .toggle {
+    display: none;
+  }
+  header .container .right-side {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  header .container .right-side .right-ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    right: 2em;
+    top: 0;
+    position: absolute;
+  }
+  header .container .right-side .right-ul li {
+    font-size: .9em;
+  }
+  header .container .right-side .right-ul li a {
+    color: black;
+  }
+  .rank-area .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .rank-area .container .rightside {
+    margin-top: 2.5em;
+  }
+  .rank-area .container .rightside img {
+    width: 15em;
+  }
+  .about {
+    margin: 1em;
+  }
+  .about .container {
+    display: none;
+  }
+  .about .phoneContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .about .phoneContainer .abt-right-side {
+    margin-top: 2.5em;
+    margin-left: 2em;
+  }
+  .about .phoneContainer .abt-right-side img {
+    width: 20em;
+  }
+  .contact .container .small-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[40%];
+        grid-template-columns: repeat(40% 50%);
+  }
+  .contact .container .small-container .lef-side {
+    display: block;
+    width: 40%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

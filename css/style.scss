@@ -1,0 +1,334 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+
+    padding: 1em;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+
+
+        .logo{
+
+            a{
+                color: #6E3CFF;;
+                font-size: 2em;
+                text-decoration: none;
+            }
+
+            p{
+                display: inline-block;
+                position: absolute;
+                top: 0.6em;
+                color: #6E3CFF;;
+            }
+
+            
+        }
+
+        .toggle{
+            font-size: 1.5em;
+            margin-top: 0.2em;
+            color: black;
+        }
+
+
+        .right-side{
+            position: fixed;
+            z-index: 999;
+            width: 66%;
+            right: 0;
+            top: 0;
+            background: #6E3CFF;
+            padding: 1em;
+            height: 100vh;
+
+            display: none;
+            
+
+            .right-ul{
+                list-style: none;
+
+
+                li{
+                    text-align: right;
+                    padding: .5em;
+
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        text-align: center;
+                       
+                        font-size: 1.3em;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.rank-area{
+    padding: 3em;
+
+    .container{
+
+        .left-side{
+
+            .text-area{
+                h1{
+                    font-size: 2.5em;
+                    color: #6E3CFF;
+                    font-weight: 500;
+
+                    span{
+                        font-weight: 900;
+                    }
+                }
+
+                h3{
+                    font-weight: 250;
+                    font-size: 2em;
+
+                    span{
+                        display: block;
+                        font-weight: 600;
+                        color: #6E3CFF;
+                    }
+                }
+
+                p{
+                    font-size: 1em;
+                }
+            }
+
+            .button-area{
+                input{
+                    padding: 0.6em 1em;
+                    background: #6E3CFF;
+                    border: 0;
+                    color: white;
+                }
+
+                p{
+                    display: inline-block;
+
+                    margin-left: 0.5em;
+
+                    a{
+
+                        text-decoration: none;
+
+                        .fa-play{
+                            color: lawngreen;
+                        }
+                    }
+                }
+            }
+        }
+
+        .rightside{
+            text-align: center;
+            margin-top: 3em;
+            
+            img{
+                width: 60%;
+            }
+        }
+    }
+}
+
+.about{
+    padding: 3em;
+
+    h3{
+        color: #6E3CFF;;
+        font-size: 1em;
+    }
+    
+    .container{
+
+        .abt-left-side{
+            
+            
+
+            h2{
+                font-size: 2.3em;
+            }
+
+        }
+
+        .abt-right-side{
+            text-align: center;
+            margin-top: 2.5em;
+
+            img{
+                width: 70%;
+            }
+        }
+    }
+}
+
+.contact{
+    padding: 3em;
+
+    .container{
+
+        .lef-side{
+            display: none;
+        }
+
+        .cont-text{
+
+            h3{
+                color: #6E3CFF;
+            }
+
+            button{
+                padding: .5em 1em;
+                background: #6E3CFF;
+                color: white;
+                border: 0;
+                cursor: pointer;
+            }
+        }
+
+        .cont-form{
+            margin-top: 1.5em;
+
+            label{
+                display: block;
+                margin-top: 0.5em;
+            }
+
+            input{
+                width: 100%;
+                padding: 0.7em 0em;
+                margin-top: 0.5em;
+            }
+
+            textarea{
+                display: block;
+                width: 100%;
+            }
+
+            button{
+                background: #6E3CFF;
+                color: white;
+                padding: 0.5em 1em;
+                border: 0;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+        }
+
+
+    }
+}
+
+
+@media(min-width: 680px){
+    header{
+        
+        .container{
+
+
+            .toggle{
+                display: none;
+            }
+
+            .right-side{
+                display: grid;
+                grid-template-columns: 180px auto;
+                background: none;
+                position: unset;
+                height: auto;
+                width: 100%;
+                padding: 0;
+
+                .right-ul{
+                    display: grid;
+                    grid-template-columns: repeat(4,1fr);
+                    right: 2em;
+                    top: 0;
+                    position: absolute;
+
+                    li{
+
+                        font-size: .9em;
+
+                        a{
+                            color: black;
+                           
+                        }
+
+                        
+                        
+                    }
+                }
+
+            }
+        }
+    }
+
+    .rank-area{
+        .container{
+            display: grid;
+            grid-template-columns: auto auto;
+
+            .rightside{
+                margin-top: 2.5em;
+
+                img{
+                    width: 15em;
+                }
+            }
+
+        }
+    }
+
+    .about{
+        margin: 1em;
+        .container{
+            display: none;
+        }
+
+        .phoneContainer{
+            display: grid;
+            grid-template-columns: 50% 50%;
+
+            .abt-right-side{
+                margin-top: 2.5em;
+                margin-left: 2em;
+
+                img{
+                    width: 20em;
+                }
+            }
+        }
+    }
+
+    .contact{
+        .container{
+
+            .small-container{
+
+                display: grid;
+                grid-template-columns: repeat(40% 50%);
+
+                .lef-side{
+                    display: block;
+                    width: 40%;
+    
+                    
+                }
+            }
+        }
+    }
+    
+}
